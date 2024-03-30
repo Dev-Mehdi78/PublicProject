@@ -1,0 +1,30 @@
+#order allow,deny
+#deny from 123.45.6.
+#allow from all
+
+#DirectoryIndex index.php
+# DirectoryIndex index.html index.cgi index.php  => ولویت نمایش صفحه
+
+#IndexIgnore *.txt ==> عدم نمایش فایل با پسوند txt
+#IndexIgnore * => هیچ فایل و فولدری نمایش نمیده
+
+
+
+#Options +FollowSymlinks
+#RewriteEngine on
+#Options -Indexes
+
+#Options -Indexes => اگه خواستید کلاً فولدرهای سایتتون نمایش داده نشن
+#Options +Indexes => اگه خواستید کلاً فولدرهای سایتتون نمایش داده بشن
+
+#ErrorDocument 401 http://127.0.0.1:8095/shopping/
+#ErrorDocument 403 http://127.0.0.1:8095/shopping/
+#ErrorDocument 404 http://127.0.0.1:8095/shopping/
+#ErrorDocument 500 http://127.0.0.1:8095/shopping/
+
+#RewriteCond %{REQUEST_FILENAME} !-d
+#RewriteCond %{REQUEST_FILENAME} !-f
+#RewriteCond %{REQUEST_FILENAME} !-l
+
+#RewriteRule ^(.*)$ index.php?url=$1 [QSA,L]
+

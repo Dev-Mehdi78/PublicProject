@@ -1,0 +1,44 @@
+.fa-icon {
+    color: black;
+    margin-top: 18px;
+    padding: 0px 10px;
+    font-size: 30px;
+    width: 28px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+.fa-icon:hover {
+    opacity: 0.7;
+    color: #4d4d4d;
+    border-bottom: 3px solid  #ec0000;
+}
+.fa-google-header {
+    margin-right: 30px;
+}
+
+.fa-icon-footer{
+    padding: 2.5%;
+    color: black;
+}
+
+.fa-icon-footer:hover{
+    color:  #ec0000;
+    border-bottom: black;
+}
+
+/*
+.fa-instagram {
+    background: #125688;
+    color: white;
+}
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+
+*/

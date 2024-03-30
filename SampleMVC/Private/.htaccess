@@ -1,0 +1,4 @@
+AuthName "please enter the password"
+AuthUserFile E:\wampp\admin\.htpasswd
+AuthType basic
+require valid-user

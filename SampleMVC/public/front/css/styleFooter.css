@@ -1,0 +1,122 @@
+.footer{
+    margin-bottom: 0;
+}
+
+.grid-container-top-footer {
+    display: grid;
+    grid-template-columns: 25% 50% 25%;
+}
+
+.grid-box-footer{
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+}
+
+.footer-top {
+    background: white;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 1.8;
+    height: auto;
+    box-shadow: 2px 0 4px 0 rgba(0, 0, 0, .5);
+    border-right: #ec0000 solid 3px;
+    border-left:  #ec0000 solid 3px;
+    border-bottom:  #ec0000 solid 3px;
+}
+
+.footer-bottom {
+    width: 100%;
+    height: auto;
+    background: black;
+    margin: 0;
+    color: white;
+}
+
+.delay-bottom-1500 {
+    animation-name: move-footer;
+    animation-delay: 1500ms;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    animation: move-footer 5s infinite ease-in-out;
+    font-size: 16px;
+    position: relative;
+    color: #f7f7f7;
+    text-align: center;
+}
+
+@keyframes move-footer {
+    0% {
+        opacity: 0;
+    }
+    3% {
+        opacity: .3;
+    }
+    5% {
+        opacity: .5;
+    }
+    7% {
+        opacity: .7;
+    }
+    10% {
+        opacity: 1;
+    }
+}
+
+.box-footer{
+    width: 40%;
+    height: auto;
+    background: white;
+    padding: 3%;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 2px 4px 0 4px rgba(0, 0, 0, .3);
+    margin: 0 28% 4% auto;
+}
+
+.box-footer:hover{
+    background:#f2f4f7;
+    border-bottom: 3px solid  #ec0000;
+    border-right: 3px solid  #ec0000;
+    box-shadow: none;
+
+}
+
+.icon-box-footer{
+    font-size: 250%;
+    color: black;
+}
+
+.text-title-box-footer{
+    font-size: 95%;
+}
+
+.text-description-box-footer{
+    font-size: 80%;
+
+}
+
+.advertise-top-footer{
+    box-shadow: 0 5px 5px 3px rgba(0, 0, 0, .5);
+    margin: 0;
+    height: auto;
+}
+
+.delay-1500-advertise{
+    animation-name: move-advertise;
+    animation-delay: 100000ms;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    animation: move-advertise 8s infinite ease-in-out;
+    font-size: 15px;
+    position: relative;
+    color: #ec0000;
+    padding: 1% 0 1% 0;
+}
+@keyframes move-advertise {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
